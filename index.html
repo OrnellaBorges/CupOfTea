@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Cup of Tea - Meilleur thé de l'année</title>
+		<meta name="description" content="Résumé de la page en 160 caractères maxi">
+
+		<!-- Contrôler la mise en page sur mobile -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!--
+			La feuille de style de fontawesome est désormais dans styles ! 
+			<link rel="stylesheet" href="css/all.min.css" media="screen">
+		-->
+		<!-- CSS Perso -->
+		<link rel="stylesheet" href="css/styles.css" media="screen">
+	</head>
+	<body>
+		<!--HEADER-->
+		<header class="site-header">
+			<a class="site-header-logo" href="./" title="Retour à l'accueil">
+				<img src="img/logo.png" alt="Logo de Cup of Tea">
+			</a>
+			<img class="site-header-baseline" src="img/ribbon.svg" alt="Élu meilleur thé en 2016" width="150">
+			<nav class="site-header-nav">
+				<a class="site-header-nav-link" href="listing-product.html">Thés</a>
+				<a class="site-header-nav-link" href="#">Grands crus</a>
+				<a class="site-header-nav-link" href="#">Accessoires</a>
+				<a class="site-header-nav-link" href="#">Epicerie</a>
+				<a class="site-header-nav-link" href="about.html">Notre histoire</a>
+			</nav>
+			<p class="site-header-promo">Livraison offerte à partir de 65€ d'achat !</p>
+			<div class="site-header-cart" aria-label="Mon panier">
+				<span aria-hidden="true">Mon panier</span>
+				<i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+				<strong>42,00€</strong>
+			</div>
+		</header>
+		<!--MAIN CONTENT-->
+		<main>
+			<header class="main-header">
+				<h1>C'est noël chez Cup of Tea, profitez-en !</h1>
+				<img src="img/offre-noel.jpg" alt="Offre spéciale pour noel ! Dès 45€ d'achat, le photophore de noël vous sera offert. Et dès 85€ un thé vert au prune et coing de 100 gramme vous sera offert">
+				<p>Pour toute commande effectuée avant le 20 décembre</p>
+			
+				<div class="slider">
+					<figure class="slider-figure is-active">
+						<img src="img/slider/1.jpg" alt="Retrouvez toute nos idées cadeaux pour les fêtes de noël">
+					</figure>
+					<figure class="slider-figure">
+						<img src="img/slider/2.jpg" alt="Thé 25">
+					</figure>
+					<nav class="slider-nav">
+						<a href="#" rel="prev" class="slider-nav-link prev" aria-label="Précédente">
+							<i class="bi bi-arrow-left-circle-fill" aria-hidden="true"></i>
+						</a>
+						<a href="#" rel="next" class="slider-nav-link next" aria-label="Suivante">
+							<i class="bi bi-arrow-right-circle-fill" aria-hidden="true"></i>
+						</a>
+					</nav>
+				</div>
+			</header>
+			<nav class="main-section products-nav">
+				<h2 class="main-section-title"><span>Choisissez votre thé</span></h2>
+				<a href="#">
+					<img src="img/tea/1.jpg" alt="Tasse de thé noir">
+					Thé noir
+				</a>
+				<a href="#">
+					<img src="img/tea/2.jpg" alt="Tasse de thé vert">
+					Thé vert
+				</a>
+				<a href="#">
+					<img src="img/tea/3.jpg" alt="Tasse de oolong">
+					Oolong
+				</a>
+				<a href="#">
+					<img src="img/tea/4.jpg" alt="Tasse de thé blanc">
+					Thé blanc
+				</a>
+				<a href="#">
+					<img src="img/tea/5.jpg" alt="Tasse de rooibos">
+					Rooibos
+				</a>
+			</nav>
+			<div class="main-section feed">
+				<article class="feed-article">
+					<header class="article-header">
+						<p class="main-section-title">
+							<span>Notre nouveauté</span>
+						</p>
+						<img src="img/product/product1.jpg" alt="Thé du Hammam">
+						<h2>Thé du hammam</h2>
+					</header>					
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>					
+					<p>À partir de <strong>8,50€</strong></p>					
+					<a class="article-link" href="#">Voir ce produit</a>
+				</article>
+				<article class="feed-article">
+					<header class="article-header">
+						<p class="main-section-title">
+							<span>Notre best-seller</span>
+						</p>
+						<img src="img/product/product2.jpg" alt="Thé du Hammam">
+						<h2>Thé du hammam</h2>
+					</header>					
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>					
+					<p>À partir de <strong>7,60€</strong></p>					
+					<a class="article-link" href="#">Voir ce produit</a>
+				</article>
+				<article class="feed-article">
+					<header class="article-header">
+						<p class="main-section-title">
+							<span>Notre coup de coeur</span>
+						</p>
+						<img src="img/product/product3.jpg" alt="Thé du Hammam">
+						<h2>Thé du hammam</h2>
+					</header>					
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>					
+					<p>À partir de <strong>9,00€</strong></p>					
+					<a class="article-link" href="#">Voir ce produit</a>
+				</article>				
+			</div>
+		</main>
+		<!--FOOTER-->
+		<footer class="site-footer">
+			<ul class="site-footer-cgv">
+				<li>
+					<i class="fa-solid fa-lock" aria-hidden="true"></i>
+					Paiement sécurisé
+				</li>
+				<li>
+					<i class="fa-solid fa-truck" aria-hidden="true"></i>
+					Ma livraison offerte
+				</li>
+				<li>
+					<i class="fa-solid fa-money-bill" aria-hidden="true"></i>
+					Carte de fidélité
+				</li>
+				<li>
+					<i class="fa-solid fa-phone" aria-hidden="true"></i>
+					Service client
+				</li>
+				<li>
+					<i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+					Garantie qualité
+				</li>
+			</ul>
+			<nav class="site-footer-navs">
+				
+				<section>
+					<h2>Cup of Tea</h2>
+					<ul>
+						<li><a href="#">Notre histoire</a></li>
+						<li><a href="#">Nos boutiques</a></li>
+						<li><a href="#">Le Thé de A à Z</a></li>
+						<li><a href="#">Espace clients professionnels</a></li>
+						<li><a href="#">Recrutement</a></li>
+						<li><a href="#">Contactez-nous !</a></li>
+						<li><a href="#">L'École du Thé</a></li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Commandez en ligne</h2>
+					<ul>
+						<li><a href="#">Première visite</a></li>
+						<li><a href="#">Aide - FAQ</a></li>
+						<li><a href="#">Service client</a></li>
+						<li><a href="#">Suivre ma commande</a></li>
+						<li><a href="#">Conditions générales de vente</a></li>
+						<li><a href="#">Informations légales</a></li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Suivez-nous !</h2>
+					<ul>
+						<li><a href="#">Notre histoire</a></li>
+						<li><a href="#">Nos boutiques</a></li>
+						<li><a href="#">Le Thé de A à Z</a></li>
+						<li><a href="#">Espace clients professionnels</a></li>
+					</ul>
+				</section>
+			</nav>
+			<nav class="site-footer-nav">
+				<h2>Cup of Tea</h2>
+				<ul>
+					<li><a href="#">Notre histoire</a></li>
+					<li><a href="#">Nos boutiques</a></li>
+					<li><a href="#">Le Thé de A à Z</a></li>
+					<li><a href="#">Espace clients professionnels</a></li>
+					<li><a href="#">Recrutement</a></li>
+					<li><a href="#">Contactez-nous !</a></li>
+					<li><a href="#">L'École du Thé</a></li>
+				</ul>
+				<h2>Commandez en ligne</h2>
+				<ul>
+					<li><a href="#">Première visite</a></li>
+					<li><a href="#">Aide - FAQ</a></li>
+					<li><a href="#">Service client</a></li>
+					<li><a href="#">Suivre ma commande</a></li>
+					<li><a href="#">Conditions générales de vente</a></li>
+					<li><a href="#">Informations légales</a></li>
+				</ul>
+				<h2>Suivez-nous !</h2>
+				<ul>
+					<li><a href="#">Notre histoire</a></li>
+					<li><a href="#">Nos boutiques</a></li>
+					<li><a href="#">Le Thé de A à Z</a></li>
+					<li><a href="#">Espace clients professionnels</a></li>
+				</ul>
+			</nav>
+			<p class="site-footer-mentions">
+				<a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img alt="Propriété de la 3W Academy" style="border-width:0" src="https://3wa.fr/wp-content/themes/3wa2015/img/logos/big.png" width="50"></a><br><span>Cet exercice</span> de <a href="https://3wa.fr">3W Academy</a> est mis à disposition <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/">pour l'usage personnel des étudiants, Pas de Rediffusion - Attribution - Pas d'Utilisation Commerciale - Pas de Modification - International</a>.<br>Les autorisations au-delà du champ de cette licence peuvent être obtenues auprès de <a href="mailto:contact@3wa.fr" rel="cc:morePermissions">contact@3wa.fr</a>. Les maquettes ont été réalisées par <a href="http://www.justine-muller.fr">Justine Muller</a>.
+		 	</p>
+		</footer>
+		<script src="js/slider.min.js"></script>
+	</body>
+</html>

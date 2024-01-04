@@ -1,0 +1,40 @@
+:root {
+    // Générer toutes les variables CSS avec une boucle 
+    @each $var, $value in $variables {
+        --cp-#{$var}: #{$value};
+    }
+}
+
+
+/*
+    Nota : 
+    La variable SASS $color-default, dans le code CSS à générer, est appelée ainsi : #{$color-default} 
+
+    On appelle cela, l'interpolation ou substitution de variable (concerne tous les langages)
+    Cela consiste à évaluer une expression ou une chaîne de caractères contenant une ou plusieurs variables
+
+    Voir : https://webdesign.tutsplus.com/fr/tutorials/all-you-ever-need-to-know-about-sass-interpolation--cms-21375
+
+
+*/
+
+/*
+Sans boucle, on aurait du écrire une ligne pour chaque variable ! 
+
+:root {
+    --cp-color-default:#{$color-default};
+    --cp-color-neutral:#{$color-neutral};
+    --cp-color-primary:#{$color-primary};
+    --cp-color-primary-rgb:#{$color-primary-rgb};
+    --cp-color-secondary:#{$color-secondary};
+    --cp-color-secondary-rgb:#{$color-secondary-rgb};
+
+    --cp-font-default: #{$font-default};
+    --cp-font-title:   #{$font-title};
+    --cp-font-title-weight: #{$font-title-weight};
+
+    etc...
+}
+
+*/
+

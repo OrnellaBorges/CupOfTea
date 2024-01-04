@@ -1,0 +1,22 @@
+// ====================================================== //
+//  Importation SASS des fichiers scss 
+//  situés dans le même dossier  
+//  Les fichiers ont été renommés avec l'extension .scss
+//      inutile de l'indiquer 
+// ====================================================== //
+
+@import 'variables'; // Contient désormais les varaibles SASS
+@import 'root'; // Nouvelle source : Ancien variables.css 
+@import 'fonts';
+@import 'normalize';
+@import 'bases';
+@import 'layout';
+@import 'banner';
+@import 'footer';
+@import 'modules';
+@import 'print';
+
+// Nota : commentaire en SASS (plus pratique que /* Commentaire */ )
+
+// ON peut donc facilement invalider une importation pour ne pas charger les styles correspondants 
+// @import 'print';

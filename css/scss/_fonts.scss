@@ -1,0 +1,35 @@
+/* ====================================================== */
+/* ======== Chargement des polices non standards ======== */
+/* ====================================================== */
+
+/*
+
+Dans le code intitial, le chemin devait partir de la source
+
+@font-face {
+	font-family: "Amaranth";
+	src: url(../../webfonts/amaranth.otf);
+}
+
+
+Désormais, il part de styles.css
+*/
+
+@font-face {
+	font-family: "Amaranth";
+	src: url(../webfonts/amaranth.otf);
+}
+
+/*
+Du coup, on peut importer celle de fontawesome 
+	Plus besoin de la déclarer dans le code html
+
+Là, j'ai fait simple
+Mais on peut aussi se casser la nenette en partant des sources SASS de fontawesome 
+
+*/
+
+@import 'all';
+
+
+

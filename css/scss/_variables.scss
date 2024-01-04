@@ -1,0 +1,58 @@
+// ====================================================== //
+// =================== VARIABLES SASS =================== //
+// ====================================================== //
+
+//  Support : https://sass-lang.com/documentation/variables  //
+
+
+/* 
+    La valeur des variables est stockés en SASS 
+    
+    !default signifie qu'il sera possible de modifier la valeur dans un contexte donné 
+    voir _banner.scss ligne 173
+
+*/
+$color-default:#666!default;
+$color-neutral:#f2f2f2!default;
+$color-primary:#96b011!default;
+$color-primary-rgb:135, 158, 15!default;
+$color-secondary:#b09067!default;
+$color-secondary-rgb:176,144,103!default;
+$font-default:"Open Sans", Verdana, sans-serif!default;
+$font-title:   "Amaranth"!default;
+$font-title-weight:normal!default;
+$gutter: 2.5rem!default;
+$layout-max:1100px!default;
+$line-height:1.4!default;
+
+/* 
+    A la compilation, elles seront remplacées par leur valeur respective 
+
+    Modifications apportées aux sources pour exploiter directement les variables SASS 
+
+    Voir : 
+    banner.scss à ligne 13 (background-color : $color-primary!default;)
+    footer.css à la ligne 6
+
+
+    Voir ci-après après avoir fait des boucles et de la concaténation en js !
+
+    En les stockant dans un tableau, on peut faire une boucle
+    Voir _root.scss 
+
+*/
+
+$variables : (
+    'color-default':$color-default,
+    'color-neutral':$color-neutral,
+    'color-primary':$color-primary,
+    'color-primary-rgb':$color-primary-rgb,
+    'color-secondary':$color-secondary,
+    'color-secondary-rgb':$color-secondary-rgb,
+    'font-default':    $font-default,
+    'font-title':   $font-title,
+    'font-title-weight':$font-title-weight,
+    'gutter': $gutter,
+    'layout-max':$layout-max,
+    'line-height':$line-height
+)!default;
